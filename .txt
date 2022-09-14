@@ -1,0 +1,117 @@
+function Ds()
+	setclipboard("discord.gg/W7VHxeP4ks")
+end
+function Link()
+    setclipboard("https://link-target.net/443009/key-on-dark-script-lua")
+end
+function KeyValide()
+    print('Code --> '..ContentText)
+end
+local ScreenGui = Instance.new("ScreenGui")
+local GUI = Instance.new("Frame")
+local CloseButton = Instance.new("ImageButton")
+local Title = Instance.new("TextLabel")
+local TextBox = Instance.new("TextBox")
+local TextButton1 = Instance.new("TextButton")
+local TextButton2 = Instance.new("TextButton")
+local TextButton3 = Instance.new("TextButton")
+local UICornerGUI = Instance.new("UICorner")
+local UICornerTitle = Instance.new("UICorner")
+local UICornerCloseButton = Instance.new("UICorner")
+local UICornerTextBox = Instance.new("UICorner")
+local UICornerTextButton1 = Instance.new("UICorner")
+local UICornerTextButton2 = Instance.new("UICorner")
+local UICornerTextButton3 = Instance.new("UICorner")
+
+UICornerGUI.Parent = GUI
+UICornerTitle.Parent = Title
+UICornerCloseButton.Parent = CloseButton
+UICornerTextBox.Parent = TextBox
+UICornerTextButton1.Parent = TextButton1
+UICornerTextButton2.Parent = TextButton2
+UICornerTextButton3.Parent = TextButton3
+
+ScreenGui.Parent = game.CoreGui
+
+GUI.Name = "GUI"
+GUI.Parent = ScreenGui
+GUI.BackgroundColor3 = Color3.fromRGB(0,0,0)
+GUI.Position = UDim2.new(0.348986119, 0, 0.369458109, 0)
+GUI.Size = UDim2.new(0, 450, 0, 195)
+GUI.Active = true
+GUI.Draggable = true
+
+Title.Name = "Title"
+Title.Parent = GUI
+Title.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Title.Size = UDim2.new(0, 440, 0, 20)
+Title.BorderSizePixel = 0
+Title.TextXAlignment = Enum.TextXAlignment.Left
+Title.Font = Enum.Font.GothamBold
+Title.Text = "  DarkScriptHub"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 14.000
+
+CloseButton.Name = "CloseButton"
+CloseButton.Parent = GUI
+CloseButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+CloseButton.BorderSizePixel = 0
+CloseButton.Position = UDim2.new(0, 430, 0, 0)
+CloseButton.Size = UDim2.new(0, 20, 0, 20)
+CloseButton.Image = 'rbxassetid://10764303701'
+CloseButton.MouseButton1Click:Connect(function()
+	ScreenGui:Destroy()
+end)
+
+TextBox.Name = "TextBox"
+TextBox.Parent = GUI
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0, 20, 0, 40)
+TextBox.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextBox.Size = UDim2.new(0, 260, 0, 60)
+TextBox.Font = Enum.Font.GothamBold
+TextBox.Text = "Write Key Here"
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 20.000
+
+TextButton2.Name = "TextButton2"
+TextButton2.Parent = GUI
+TextButton2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextButton2.BorderSizePixel = 0
+TextButton2.Position = UDim2.new(0, 300, 0, 40)
+TextButton2.Size = UDim2.new(0, 130, 0, 27.5)
+TextButton2.Text = 'Validated The Key'
+TextButton2.TextSize = 10.000
+TextButton2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton2.Font = Enum.Font.GothamBold
+TextButton2.MouseButton1Click:Connect(function()
+	KeyValide()
+end)
+
+TextButton1.Name = "TextButton1"
+TextButton1.Parent = GUI
+TextButton1.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextButton1.BorderSizePixel = 0
+TextButton1.Position = UDim2.new(0, 300, 0, 72.5)
+TextButton1.Size = UDim2.new(0, 130, 0, 27.5)
+TextButton1.Text = 'Link To Key'
+TextButton1.TextSize = 10.000
+TextButton1.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton1.Font = Enum.Font.GothamBold
+TextButton1.MouseButton1Click:Connect(function()
+	Link()
+end)
+
+TextButton3.Name = "TextButton3"
+TextButton3.Parent = GUI
+TextButton3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextButton3.BorderSizePixel = 0
+TextButton3.Position = UDim2.new(0, 20, 0, 120)
+TextButton3.Size = UDim2.new(0, 410, 0, 55)
+TextButton3.Text = 'Need Help ? Join Discord'
+TextButton3.TextSize = 20.000
+TextButton3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton3.Font = Enum.Font.GothamBold
+TextButton3.MouseButton1Click:Connect(function()
+	Ds()
+end)
